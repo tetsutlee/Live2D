@@ -15,9 +15,9 @@ void Live2D::Initialize()
 {
 
 #ifdef _WIN64
-	Live2D_SetCubism4CoreDLLPath("../CubismSdkForNative-4-r.1/Core/dll/windows/x86_64/Live2DCubismCore.dll");
+	Live2D_SetCubism4CoreDLLPath(L"../CubismSdkForNative-4-r.1/Core/dll/windows/x86_64/Live2DCubismCore.dll");
 #else
-	Live2D_SetCubism4CoreDLLPath("../CubismSdkForNative-4-r.1/Core/dll/windows/x86/Live2DCubismCore.dll");
+	Live2D_SetCubism4CoreDLLPath(L"../CubismSdkForNative-4-r.1/Core/dll/windows/x86/Live2DCubismCore.dll");
 #endif
 
 }

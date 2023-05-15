@@ -17,7 +17,7 @@ public:
 	{
 		int tex = LoadGraph(fileName);
 		if (tex == -1) {
-			MessageBox(NULL, "‰æ‘œ‚Ì“Ç‚İ‚İ‚É¸”s‚µ‚Ü‚µ‚½", ERROR, MB_OK);
+			MessageBox(NULL, L"‰æ‘œ‚Ì“Ç‚İ‚İ‚É¸”s‚µ‚Ü‚µ‚½", ERROR, MB_OK);
 			return 0;
 		}
 	};

@@ -7,7 +7,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	//ウィンドウモードに設定
 	ChangeWindowMode(TRUE);
 
-	SetMainWindowText("Live2D Test Program");
+	SetMainWindowText(L"Live2D Test Program");
 
 	// 画面解像度を設定
 	SetGraphMode(1280, 720, 0);
@@ -31,7 +31,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 	game.Initialize();
 	game.Load();
 
-	live2D->Load("../Assets/miara_pro_jp/runtime/miara_pro_t04.model3.json");
+	live2D->Load(L"../Assets/miara_pro_jp/runtime/miara_pro_t04.model3.json");
 
 	// 描画先を裏画面に変更
 	SetDrawScreen(DX_SCREEN_BACK);
@@ -53,11 +53,11 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 
 		if (!motionChange)
 		{
-			live2D->Update("Idle");
+			live2D->Update(L"Idle");
 		}
 		else
 		{
-			live2D->Update("Flick");
+			live2D->Update(L"Flick");
 		}
 
 		live2D->DrawBegin();
